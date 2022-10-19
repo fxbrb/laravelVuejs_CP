@@ -1,0 +1,67 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--dark);
+
+    thead {
+        text-align: left;
+        th {
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 13px;
+            border-bottom: 1px solid rgb(192, 192, 192);
+            border-top: 1px solid rgb(192, 192, 192);
+
+            &:first-child {
+                padding-left: 0.3rem;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid rgb(192, 192, 192);
+
+            td {
+                padding: 0.5rem 0;
+
+                // Projects
+
+                img {
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+
+                .project_actions {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+
+                    i {
+                        font-size: 20px;
+                        color: var(--dark);
+                    }
+                }
+
+                // End projects
+
+                .message_read {
+                    background-color: green;
+                    padding: 0 1rem;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+
+                .unread_message {
+                    background-color: red;
+                    padding: 0 0.6rem;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
